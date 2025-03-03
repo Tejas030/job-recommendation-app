@@ -15,7 +15,7 @@ const mongoose = require("mongoose");
 // Load environment variables
 require("dotenv").config();
 
-const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/job_recommendation";
+const MONGO_URI = process.env.MONGO_URI
 
 mongoose.connect(MONGO_URI)
     .then(() => console.log("🔥 MongoDB Connected!"))
